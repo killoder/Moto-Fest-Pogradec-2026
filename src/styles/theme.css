@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --color-matte-black: #121212;
+  --color-brushed-steel: #8e8e8e;
+  --color-taillight-orange: #cc5500;
+  
+  --font-bebas: "Bebas Neue", sans-serif;
+  --font-ruslan: "Ruslan Display", cursive;
+  --font-mono: "Roboto Mono", monospace;
+}
+
+body {
+  background-color: var(--color-matte-black);
+  color: var(--color-brushed-steel);
+  font-family: var(--font-mono);
+  overflow: hidden;
+}
+
+/* Add an intense film grain/noise */
+.bg-noise {
+  position: relative;
+}
+.bg-noise::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.15;
+  mix-blend-mode: overlay;
+  z-index: 50;
+}
+
+.glass-panel {
+  background: rgba(18, 18, 18, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(142, 142, 142, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
+}
+
+.glass-panel-orange {
+  background: rgba(204, 85, 0, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(204, 85, 0, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(204, 85, 0, 0.15);
+}
+
+.text-glow-orange {
+  text-shadow: 0 0 10px rgba(204, 85, 0, 0.8), 0 0 20px rgba(204, 85, 0, 0.4);
+}
+
+.chrome-text {
+  background: linear-gradient(to bottom, #ffffff 0%, #8e8e8e 50%, #333333 51%, #a0a0a0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
