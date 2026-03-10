@@ -1,6 +1,6 @@
 import { Outlet, useNavigate, useLocation } from "react-router";
 import { slides } from "../data/slides";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Home } from "lucide-react";
 import { useEffect } from "react";
 
 export function PresentationLayout() {
@@ -47,8 +47,17 @@ export function PresentationLayout() {
           </h1>
         </div>
         
-        <div className="absolute bottom-8 right-8 z-40 text-xl font-bebas text-white/30 tracking-widest">
-          {currentId.toString().padStart(2, "0")} // {slides.length.toString().padStart(2, "0")}
+        <div className="absolute bottom-8 right-8 z-40 flex items-center gap-4 text-xl font-bebas text-white/30 tracking-widest">
+          <button
+            onClick={() => navigate('/slide/1')}
+            className="p-2 glass-panel rounded-full hover:bg-white/10 transition-all text-[#cc5500] border border-[#cc5500]/30 hover:shadow-[0_0_10px_#cc5500] group"
+            title="Go to First Slide"
+          >
+            <Home size={18} className="group-hover:scale-110 transition-transform" />
+          </button>
+          <span>
+            {currentId.toString().padStart(2, "0")} // {slides.length.toString().padStart(2, "0")}
+          </span>
         </div>
 
         {/* Navigation Controls */}
