@@ -56,6 +56,7 @@ export function Slide9() {
           <h1 className="font-bebas text-7xl text-white tracking-widest uppercase chrome-text mb-3">
             THE FESTIVAL LINEUP
           </h1>
+          {/* <Comment></Comment> */}
           <h2 className="font-mono text-[#cc5500] text-2xl tracking-[0.2em] uppercase text-glow-orange">
             Pogradec Public Beach | July 17 – 18, 2026
           </h2>
