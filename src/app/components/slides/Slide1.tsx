@@ -28,13 +28,13 @@ export function Slide1() {
           Pogradec, Albania
         </h2>
         <h1 className="font-bebas text-white text-7xl md:text-[140px] leading-none tracking-tight mb-8 drop-shadow-2xl">
-          MOTOFEST <span className="text-[#cc5500]">2026</span>
+          MOTO FEST <span className="text-[#cc5500]">2026</span>
         </h1>
         <div className="h-1 w-full bg-gradient-to-r from-transparent via-[#cc5500] to-transparent mb-8" />
-        <p className="font-mono text-[#8e8e8e] text-2xl tracking-[0.5em] uppercase mb-4">
+        <p className="font-mono text-[#8e8e8e] text-3xl tracking-[0.5em] uppercase mb-6">
           The Legend Returns
         </p>
-        <p className="font-bebas text-[#cc5500] text-3xl tracking-widest uppercase">
+        <p className="font-bebas text-[#cc5500] text-4xl tracking-widest uppercase">
           17-18 July 2026
         </p>
       </motion.div>

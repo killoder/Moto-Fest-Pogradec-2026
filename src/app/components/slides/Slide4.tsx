@@ -6,7 +6,7 @@ export function Slide4() {
     <div className="w-full h-full flex items-center justify-center relative bg-[#121212] overflow-hidden">
       {/* Massive '22' Watermark */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-        <h1 className="font-bebas text-[800px] text-white/[0.03] leading-none">
+        <h1 className="font-bebas text-[800px] text-white/[0.2] leading-none">
           22
         </h1>
       </div>
@@ -15,15 +15,15 @@ export function Slide4() {
         <img
           src="https://images.unsplash.com/photo-1695222833131-54ee679ae8e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXJnbyUyMHRydWNrfGVufDF8fHx8MTc3Mjk4NDQwM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
           alt="Cargo Truck"
-          className="w-full h-full object-cover opacity-20 grayscale"
+          className="w-full h-full object-cover opacity-50 grayscale"
         />
         <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
       </div>
 
-      <div className="z-10 w-full max-w-7xl px-16 flex justify-between items-center">
+      <div className="z-10 w-full max-w-[1600px] px-16 flex justify-between items-center gap-16">
         {/* Left Stats */}
         <motion.div 
-          className="flex-1 pr-16"
+          className="flex-1 pr-12"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
@@ -39,8 +39,8 @@ export function Slide4() {
             <div className="flex items-start gap-6">
               <Truck className="w-12 h-12 text-[#cc5500] shrink-0" />
               <div>
-                <h3 className="font-bebas text-3xl text-white mb-2">Already Done</h3>
-                <p className="font-mono text-[#8e8e8e] text-lg">
+                <h3 className="font-bebas text-4xl text-white mb-2">Already Done</h3>
+                <p className="font-mono text-[#8e8e8e] text-2xl">
                   22 trucks of medical and school supplies delivered in past years.
                 </p>
               </div>
@@ -49,8 +49,8 @@ export function Slide4() {
             <div className="flex items-start gap-6">
               <HeartPulse className="w-12 h-12 text-[#cc5500] shrink-0" />
               <div>
-                <h3 className="font-bebas text-3xl text-white mb-2">Coming in 2026</h3>
-                <p className="font-mono text-[#8e8e8e] text-lg">
+                <h3 className="font-bebas text-4xl text-white mb-2">Coming in 2026</h3>
+                <p className="font-mono text-[#8e8e8e] text-2xl">
                   10 more trucks of help are already confirmed for this year.
                 </p>
               </div>
@@ -59,8 +59,8 @@ export function Slide4() {
             <div className="flex items-start gap-6">
               <Globe className="w-12 h-12 text-[#cc5500] shrink-0" />
               <div>
-                <h3 className="font-bebas text-3xl text-white mb-2">German Partnership</h3>
-                <p className="font-mono text-[#8e8e8e] text-lg">
+                <h3 className="font-bebas text-4xl text-white mb-2">German Partnership</h3>
+                <p className="font-mono text-[#8e8e8e] text-2xl">
                   Working with Biker-Brummi-Hilfe to bring aid to Albania.
                 </p>
               </div>
@@ -70,7 +70,7 @@ export function Slide4() {
 
         {/* Right Callout Box */}
         <motion.div 
-          className="w-[450px]"
+          className="w-[500px]"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
@@ -84,10 +84,10 @@ export function Slide4() {
             <h2 className="font-bebas text-[100px] text-white leading-none mb-4 text-glow-orange">
               22
             </h2>
-            <p className="font-ruslan text-[#8e8e8e] text-2xl mb-6 uppercase">
+            <p className="font-ruslan text-[#8e8e8e] text-4xl mb-6 uppercase">
               Full Trucks
             </p>
-            <p className="font-mono text-white text-sm tracking-wider uppercase">
+            <p className="font-mono text-white text-xl tracking-wider uppercase">
               "Riders with a Cause. Brotherly strength turned into actionable salvation."
             </p>
           </div>

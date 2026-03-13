@@ -3,10 +3,10 @@ import { Quote } from "lucide-react";
 
 export function Slide2() {
   return (
-    <div className="w-full h-full flex bg-black">
+    <div className="w-full h-full flex flex-col lg:flex-row bg-black overflow-y-auto lg:overflow-hidden">
       {/* Left Panel - Biker Patch */}
       <motion.div 
-        className="w-1/2 h-full relative border-r-2 border-[#cc5500]/50"
+        className="w-full lg:w-1/2 h-[40vh] lg:h-full relative border-b-2 lg:border-b-0 lg:border-r-2 border-[#cc5500]/50 shrink-0"
         initial={{ x: "-100%" }}
         animate={{ x: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -19,7 +19,7 @@ export function Slide2() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/10" />
         
         {/* Huge vertical text overlay */}
-        <div className="absolute bottom-16 left-16 z-10">
+        <div className="absolute bottom-8 left-8 lg:bottom-16 lg:left-16 z-10">
           <h2 className="font-bebas text-[120px] text-white/10 leading-none [writing-mode:vertical-rl] transform rotate-180 tracking-widest">
             THE BRIEF
           </h2>
@@ -28,12 +28,12 @@ export function Slide2() {
 
       {/* Right Panel - Text Content */}
       <motion.div 
-        className="w-1/2 h-full p-24 flex flex-col justify-center relative bg-[#121212]"
+        className="w-full lg:w-1/2 min-h-fit lg:h-full p-6 md:p-12 lg:p-24 flex flex-col justify-center relative bg-[#121212]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 1 }}
       >
-        <div className="glass-panel p-16 border-l-4 border-l-[#cc5500]">
+        <div className="glass-panel p-6 md:p-10 lg:p-16 border-l-4 border-l-[#cc5500]">
           <Quote className="text-[#cc5500] w-16 h-16 mb-8 opacity-50" />
           
           <h3 className="font-ruslan text-4xl text-[#8e8e8e] mb-6 tracking-wider uppercase">
@@ -48,7 +48,7 @@ export function Slide2() {
             We are making Pogradec a top destination for bikers and tourists from all over Europe. Our goal is to grow the local economy while helping the community.
           </p>
           
-          <ul className="space-y-6 font-mono text-lg text-white">
+          <ul className="space-y-6 font-mono text-xl text-white">
             <li className="flex items-center space-x-4">
               <span className="w-12 h-[2px] bg-[#cc5500] shrink-0"></span>
               <span><strong className="text-[#cc5500]">Huge Crowd:</strong> Bringing 1,200 international bikers and over 5,000 total visitors to Pogradec.</span>

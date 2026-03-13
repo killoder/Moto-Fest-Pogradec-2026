@@ -27,9 +27,7 @@ export function Slide11() {
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent" />
       </motion.div>
 
-
-
-      <div className="relative z-20 max-w-[1400px] mx-auto px-12 w-full">
+      <div className="relative z-20 max-w-[1700px] mx-auto px-16 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-5 xl:col-span-5 max-w-xl">
             <motion.div
@@ -51,14 +49,14 @@ export function Slide11() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
             >
-              <h3 className="font-bebas text-2xl text-white mb-4 tracking-wider border-b border-[#8e8e8e]/20 pb-2">ZONES OF OPERATION</h3>
+              <h3 className="font-bebas text-3xl text-white mb-4 tracking-wider border-b border-[#8e8e8e]/20 pb-2">ZONES OF OPERATION</h3>
               <ul className="space-y-5">
                 {locations.map((loc, i) => (
                   <li key={i} className="flex items-center gap-4 group">
-                    <div className="p-2.5 rounded border border-[#cc5500]/30 bg-[#cc5500]/5 shadow-[0_0_10px_rgba(204,85,0,0.1)] group-hover:bg-[#cc5500]/20 group-hover:border-[#cc5500] group-hover:shadow-[0_0_15px_rgba(204,85,0,0.4)] transition-all duration-300">
+                    <div className="p-3 rounded border border-[#cc5500]/30 bg-[#cc5500]/5 shadow-[0_0_10px_rgba(204,85,0,0.1)] group-hover:bg-[#cc5500]/20 group-hover:border-[#cc5500] group-hover:shadow-[0_0_15px_rgba(204,85,0,0.4)] transition-all duration-300">
                       <loc.icon className="text-[#cc5500] w-5 h-5 drop-shadow-[0_0_5px_rgba(204,85,0,0.8)]" strokeWidth={1.5} />
                     </div>
-                    <span className="font-mono text-[#8e8e8e] group-hover:text-white text-[15px] uppercase tracking-wide transition-colors duration-300">{loc.name}</span>
+                    <span className="font-mono text-[#8e8e8e] group-hover:text-white text-[18px] uppercase tracking-wide transition-colors duration-300">{loc.name}</span>
                   </li>
                 ))}
               </ul>

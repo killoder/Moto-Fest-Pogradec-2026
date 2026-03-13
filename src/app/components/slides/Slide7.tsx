@@ -37,7 +37,7 @@ const tiers = [
 
 export function Slide7() {
   return (
-    <div className="w-full h-full relative bg-[#121212] pt-20 px-16 flex flex-col items-center">
+    <div className="w-full h-full relative bg-[#121212] px-16 flex flex-col items-center justify-center">
       {/* Carbon Fiber Background overlay */}
       <div 
         className="absolute inset-0 opacity-10"
@@ -49,7 +49,7 @@ export function Slide7() {
       />
       
       <motion.div 
-        className="text-center z-10 mb-16"
+        className="text-center z-10 mb-20"
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
@@ -57,12 +57,12 @@ export function Slide7() {
         <h1 className="font-bebas text-6xl text-white tracking-widest chrome-text mb-4">
           BECOME A PARTNER
         </h1>
-        <p className="font-mono text-[#8e8e8e] text-xl uppercase tracking-widest">
+        <p className="font-mono text-[#8e8e8e] text-2xl uppercase tracking-widest">
           Choose the best way to showcase your brand to 6,000 visitors.
         </p>
       </motion.div>
 
-      <div className="w-full max-w-5xl z-10 flex gap-12 px-8 h-[550px] items-center pb-8">
+      <div className="w-full max-w-[1300px] z-10 flex gap-16 px-8 h-[550px] items-center pb-8">
         {tiers.map((tier) => (
           <motion.div
             key={tier.name}
@@ -76,7 +76,7 @@ export function Slide7() {
             
             <div className="p-10 z-10 flex flex-col h-full relative">
               {tier.featured && (
-                <div className="absolute top-0 right-1/2 translate-x-1/2 -translate-y-1/2 bg-[#cc5500] text-black font-bebas px-6 py-2 text-2xl tracking-wider shadow-[0_0_15px_rgba(204,85,0,0.6)]">
+                <div className="absolute top-0 right-1/2 translate-x-1/2 -translate-y-1/2 bg-[#cc5500] text-black font-bebas px-6 py-2 text-3xl tracking-wider shadow-[0_0_15px_rgba(204,85,0,0.6)]">
                   OFFICIAL SPONSOR
                 </div>
               )}
@@ -85,7 +85,7 @@ export function Slide7() {
               
               <h2 className="font-bebas text-5xl text-white text-center mb-2">{tier.name}</h2>
               {tier.subtitle ? (
-                <p className="font-ruslan text-[#8e8e8e] text-center text-xl mb-6 border-b border-[#8e8e8e]/20 pb-6">
+                <p className="font-ruslan text-[#8e8e8e] text-center text-2xl mb-6 border-b border-[#8e8e8e]/20 pb-6">
                   {tier.subtitle}
                 </p>
               ) : (
@@ -96,7 +96,7 @@ export function Slide7() {
                 {tier.price}
               </div>
               
-              <ul className={`space-y-6 font-mono text-base text-[#8e8e8e] flex-1 mt-4 px-4 ${!tier.subtitle ? '-mt-4' : ''}`}>
+              <ul className={`space-y-6 font-mono text-xl text-[#8e8e8e] flex-1 mt-4 px-4 ${!tier.subtitle ? '-mt-4' : ''}`}>
                 {tier.features.map((feature, i) => (
                   <li key={i} className="flex items-center gap-4">
                     <span className="w-2 h-2 bg-[#cc5500] shrink-0" />

@@ -25,28 +25,28 @@ const trinityData = [
 
 export function Slide3() {
   return (
-    <div className="w-full h-full flex flex-col pt-24 px-16 bg-[#121212]">
+    <div className="w-full h-full flex flex-col pt-12 lg:pt-24 px-4 md:px-8 lg:px-16 bg-[#121212] overflow-y-auto lg:overflow-hidden">
       <motion.div 
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="w-full text-center z-20 mb-12"
+        className="w-full text-center z-20 mb-8 lg:mb-12 shrink-0"
       >
-        <h1 className="font-bebas text-7xl text-white tracking-widest chrome-text">
+        <h1 className="font-bebas text-5xl md:text-7xl text-white tracking-widest chrome-text">
           THE TRINITY CONCEPT
         </h1>
-        <p className="font-ruslan text-2xl text-[#cc5500] mt-2 tracking-widest uppercase">
+        <p className="font-ruslan text-lg md:text-3xl text-[#cc5500] mt-2 tracking-widest uppercase">
           Three reasons thousands of people join us
         </p>
       </motion.div>
 
-      <div className="flex-1 flex w-full gap-4 pb-24">
+      <div className="flex-1 flex flex-col lg:flex-row w-full gap-4 pb-12 lg:pb-24">
         {trinityData.map((item, index) => (
           <motion.div
             key={item.id}
             initial={{ opacity: 0, skewX: 10, x: -50 }}
             animate={{ opacity: 1, skewX: -5, x: 0 }}
             transition={{ delay: item.delay, duration: 0.8, ease: "easeOut" }}
-            className="flex-1 relative overflow-hidden border-2 border-[#8e8e8e]/20 group"
+            className="flex-1 min-h-[300px] relative overflow-hidden border-2 border-[#8e8e8e]/20 group"
           >
             {/* Background Image */}
             <div className="absolute inset-0 w-[120%] -left-[10%] skew-x-[5deg]">
@@ -59,15 +59,15 @@ export function Slide3() {
             </div>
 
             {/* Content box skewing back to normal text */}
-            <div className="absolute inset-0 flex flex-col justify-end p-10 transform skew-x-[5deg]">
-              <div className="glass-panel p-8 translate-y-8 group-hover:translate-y-0 transition-transform duration-500 border-b-4 border-b-[#cc5500]">
-                <div className="font-bebas text-6xl text-white mb-4 drop-shadow-lg opacity-90">
+            <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-10 transform skew-x-[5deg]">
+              <div className="glass-panel p-4 md:p-8 lg:translate-y-8 lg:group-hover:translate-y-0 transition-transform duration-500 border-b-4 border-b-[#cc5500]">
+                <div className="font-bebas text-4xl md:text-6xl text-white mb-2 md:mb-4 drop-shadow-lg opacity-90">
                   {`0${index + 1}`}
                 </div>
-                <h2 className="font-bebas text-4xl text-[#cc5500] mb-4 tracking-wider">
+                <h2 className="font-bebas text-2xl md:text-4xl text-[#cc5500] mb-2 md:mb-4 tracking-wider">
                   {item.id}
                 </h2>
-                <p className="font-mono text-[#8e8e8e] text-lg leading-relaxed group-hover:text-white transition-colors duration-300">
+                <p className="font-mono text-[#8e8e8e] text-xl leading-relaxed group-hover:text-white transition-colors duration-300">
                   {item.desc}
                 </p>
               </div>

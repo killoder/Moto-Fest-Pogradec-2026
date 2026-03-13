@@ -18,7 +18,7 @@ export function Slide5() {
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1769147339214-076740872485?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNobmljYWwlMjBkcmF3aW5nJTIwYmx1ZXByaW50fGVufDF8fHx8MTc3Mjc5MTA3MHww&ixlib=rb-4.1.0&q=80&w=1920')] opacity-5 mix-blend-screen grayscale object-cover" />
 
       {/* Blueprint Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto flex gap-12 text-[#8e8e8e]">
+      <div className="relative z-10 w-full max-w-[1700px] mx-auto flex gap-16 text-[#8e8e8e]">
         
         {/* Left Column */}
         <motion.div 

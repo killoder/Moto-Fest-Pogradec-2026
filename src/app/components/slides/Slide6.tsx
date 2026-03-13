@@ -11,7 +11,7 @@ export function Slide6() {
         className="absolute inset-0 w-full h-full object-cover opacity-[0.05] grayscale"
       />
 
-      <div className="w-full max-w-7xl z-10 grid grid-cols-2 gap-16 px-16 items-center">
+      <div className="w-full max-w-[1700px] z-10 grid grid-cols-2 gap-20 px-16 items-center">
         {/* Left Stats Text */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -34,7 +34,7 @@ export function Slide6() {
               </div>
               <div>
                 <div className="font-bebas text-4xl text-white">2,752,000 ALL</div>
-                <div className="font-mono text-[#8e8e8e] text-sm tracking-wider uppercase">Budget being invested to make this festival happen.</div>
+                <div className="font-mono text-[#8e8e8e] text-xl tracking-wider uppercase">Budget being invested to make this festival happen.</div>
               </div>
             </div>
 
@@ -44,7 +44,7 @@ export function Slide6() {
               </div>
               <div>
                 <div className="font-bebas text-4xl text-white">150% ROI</div>
-                <div className="font-mono text-[#8e8e8e] text-sm tracking-wider uppercase">A massive crowd of fans and tourists ready to spend money at local businesses</div>
+                <div className="font-mono text-[#8e8e8e] text-xl tracking-wider uppercase">A massive crowd of fans and tourists ready to spend money at local businesses</div>
               </div>
             </div>
 
@@ -54,7 +54,7 @@ export function Slide6() {
               </div>
               <div>
                 <div className="font-bebas text-4xl text-white">100% full hotels</div>
-                <div className="font-mono text-[#8e8e8e] text-sm tracking-wider uppercase">Every hotel and rental in Pogradec is expected to be full during the event.</div>
+                <div className="font-mono text-[#8e8e8e] text-xl tracking-wider uppercase">Every hotel and rental in Pogradec is expected to be full during the event.</div>
               </div>
             </div>
           </div>
@@ -117,7 +117,7 @@ export function Slide6() {
               <span className="font-bebas text-6xl text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]">
                 MAX
               </span>
-              <span className="font-mono text-[#cc5500] tracking-widest font-bold uppercase mt-2 text-sm">
+              <span className="font-mono text-[#cc5500] tracking-widest font-bold uppercase mt-2 text-s">
                 Economic Impact
               </span>
             </div>
@@ -128,20 +128,20 @@ export function Slide6() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.5, duration: 0.8 }}
-            className="glass-panel p-6 w-full max-w-[420px] border-t-2 border-[#cc5500]"
+            className="glass-panel p-6 w-full max-w-[500px] border-t-2 border-[#cc5500]"
           >
-            <h3 className="font-bebas text-2xl text-white mb-4 tracking-wider border-b border-[#8e8e8e]/20 pb-2">THE CONTRIBUTORS LIST</h3>
+            <h3 className="font-bebas text-3xl text-white mb-4 tracking-wider border-b border-[#8e8e8e]/20 pb-2">THE CONTRIBUTORS LIST</h3>
             <ul className="space-y-4">
               <li className="flex justify-between items-center group">
-                <span className="font-mono text-[#8e8e8e] group-hover:text-white transition-colors duration-300 uppercase text-[13px] tracking-wide">Moto Club Pogradec</span>
+                <span className="font-mono text-[#8e8e8e] group-hover:text-white transition-colors duration-300 uppercase text-[16px] tracking-wide">Moto Club Pogradec</span>
                 <span className="font-bebas text-[#cc5500] text-2xl">708,000 ALL</span>
               </li>
               <li className="flex justify-between items-center group">
-                <span className="font-mono text-[#8e8e8e] group-hover:text-white transition-colors duration-300 uppercase text-[13px] tracking-wide">Bashkia Pogradec</span>
+                <span className="font-mono text-[#8e8e8e] group-hover:text-white transition-colors duration-300 uppercase text-[16px] tracking-wide">Bashkia Pogradec</span>
                 <span className="font-bebas text-white text-2xl group-hover:text-[#cc5500] transition-colors duration-300">74,000 ALL</span>
               </li>
               <li className="flex justify-between items-center group">
-                <span className="font-mono text-[#8e8e8e] group-hover:text-white transition-colors duration-300 uppercase text-[13px] tracking-wide">Fondacioni Kennedy & Seven</span>
+                <span className="font-mono text-[#8e8e8e] group-hover:text-white transition-colors duration-300 uppercase text-[16px] tracking-wide">Fondacioni Kennedy & Seven</span>
                 <span className="font-bebas text-white text-2xl group-hover:text-[#cc5500] transition-colors duration-300">24,000 ALL</span>
               </li>
             </ul>

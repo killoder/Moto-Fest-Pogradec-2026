@@ -104,15 +104,15 @@ export function Slide8() {
                 <div className="flex flex-col gap-2 relative before:absolute before:inset-y-1 before:left-2 before:w-[2px] before:bg-[#8e8e8e]/20 ml-2 xl:flex-1">
                   <div className="relative pl-8">
                     <span className="absolute left-[3px] top-2 w-2 h-2 rounded-full bg-[#8e8e8e] -translate-x-1/2 shadow-[0_0_8px_rgba(142,142,142,0.8)]" />
-                    <p className="font-mono text-[#8e8e8e] text-sm"><span className="text-white font-bold">2022:</span> Motofest Pogradeci</p>
+                    <p className="font-mono text-[#8e8e8e] text-lg"><span className="text-white font-bold">2022:</span> Motofest Pogradeci</p>
                   </div>
                   <div className="relative pl-8">
                     <span className="absolute left-[3px] top-2 w-2 h-2 rounded-full bg-[#8e8e8e] -translate-x-1/2 shadow-[0_0_8px_rgba(142,142,142,0.8)]" />
-                    <p className="font-mono text-[#8e8e8e] text-sm"><span className="text-white font-bold">2024:</span> Motofest Pogradeci</p>
+                    <p className="font-mono text-[#8e8e8e] text-lg"><span className="text-white font-bold">2024:</span> Motofest Pogradeci</p>
                   </div>
                   <div className="relative pl-8">
                     <span className="absolute left-[3px] top-2 w-2 h-2 rounded-full bg-[#cc5500] -translate-x-1/2 shadow-[0_0_8px_#cc5500]" />
-                    <p className="font-mono text-[#cc5500] text-sm"><span className="text-white font-bold">2025:</span> Brotherhood Fest</p>
+                    <p className="font-mono text-[#cc5500] text-lg"><span className="text-white font-bold">2025:</span> Brotherhood Fest</p>
                   </div>
                 </div>
 
@@ -137,7 +137,7 @@ export function Slide8() {
                 <ShieldCheck className="w-6 h-6 xl:w-7 xl:h-7 text-[#8e8e8e] group-hover:scale-110 transition-transform" />
                 <h3 className="font-bebas text-2xl xl:text-3xl text-white/80 tracking-wider">OUR COMMITMENT</h3>
               </div>
-              <ul className="space-y-2 xl:space-y-3 font-mono text-[#8e8e8e] text-sm xl:text-base">
+              <ul className="space-y-2 xl:space-y-3 font-mono text-[#8e8e8e] text-s xl:text-lg">
                 <li className="flex items-start gap-3">
                   <span className="text-[#8e8e8e] mt-1.5 text-xl leading-none">▹</span>
                   <span className="leading-relaxed">

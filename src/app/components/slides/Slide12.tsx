@@ -74,7 +74,7 @@ export function Slide12() {
         
         {/* Header Container */}
         <motion.div 
-          className="w-full max-w-[1200px] flex-shrink-0 mb-8 text-center"
+          className="w-full max-w-[1400px] flex-shrink-0 mb-8 text-center"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -86,7 +86,7 @@ export function Slide12() {
 
         {/* 1x1 Square Grid Container */}
         {/* max-w-[1200px] ensures the 4 columns don't stretch too wide, meaning their aspect-square height will safely fit on screen */}
-        <div className="w-full max-w-[1200px] grid grid-cols-4 grid-rows-2 gap-6">
+        <div className="w-full max-w-[1300px] grid grid-cols-4 grid-rows-2 gap-6">
           {allies.map((item, idx) => {
             
             // Dynamic Placeholder Box

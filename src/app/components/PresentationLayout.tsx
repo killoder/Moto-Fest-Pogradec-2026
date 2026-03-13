@@ -1,12 +1,13 @@
 import { Outlet, useNavigate, useLocation } from "react-router";
 import { slides } from "../data/slides";
 import { ChevronLeft, ChevronRight, Home } from "lucide-react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export function PresentationLayout() {
   const navigate = useNavigate();
   const location = useLocation();
   const currentId = parseInt(location.pathname.split('/').pop() || "1") || 1;
+  const [scale, setScale] = useState(1);
 
   const goNext = () => {
     if (currentId < slides.length) navigate(`/slide/${currentId + 1}`);
@@ -15,6 +16,20 @@ export function PresentationLayout() {
   const goPrev = () => {
     if (currentId > 1) navigate(`/slide/${currentId - 1}`);
   };
+
+  // Scale logic to fit 1920x1080 into current viewport
+  useEffect(() => {
+    const handleResize = () => {
+      const scaleX = window.innerWidth / 1920;
+      const scaleY = window.innerHeight / 1080;
+      // Maintain aspect ratio but scale it 5% larger to fill more screen space
+      setScale(Math.min(scaleX, scaleY) * 1);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Initial calculation
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   // Keyboard navigation
   useEffect(() => {
@@ -33,7 +48,13 @@ export function PresentationLayout() {
     <div className="w-screen h-screen bg-black text-[#8e8e8e] flex flex-col items-center justify-center overflow-hidden font-mono bg-noise relative">
       <div 
         className="relative shadow-2xl overflow-hidden bg-[#121212] flex flex-col"
-        style={{ width: "100%", maxWidth: "1920px", aspectRatio: "16/9", maxHeight: "100vh" }}
+        style={{ 
+          width: "1920px", 
+          height: "1080px", 
+          transform: `scale(${scale})`,
+          transformOrigin: "center",
+          flexShrink: 0
+        }}
       >
         {/* Main Content Area */}
         <div className="flex-1 relative">

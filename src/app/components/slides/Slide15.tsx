@@ -35,14 +35,14 @@ export function Slide15() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.4, duration: 0.6 }}
         >
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-6">
             <div className="flex items-center gap-6 group cursor-pointer">
               <div className="w-12 h-12 bg-black flex items-center justify-center rounded-full border border-[#8e8e8e]/30 group-hover:border-[#cc5500] transition-colors shrink-0">
                 <Mail className="text-[#cc5500] w-5 h-5" />
               </div>
               <div className="text-left flex-1">
-                <div className="font-mono text-xs text-[#8e8e8e] uppercase">Sponsorship Inquiries</div>
-                <div className="font-bebas text-2xl text-white tracking-wide">dritanhoxha@protonmail.com</div>
+                <div className="font-mono text-s text-[#8e8e8e] uppercase">Sponsorship Inquiries</div>
+                <div className="font-bebas text-3xl text-white tracking-wide">dritanhoxha@protonmail.com</div>
               </div>
               <ArrowRight className="text-[#8e8e8e] group-hover:text-[#cc5500] group-hover:translate-x-2 transition-all w-5 h-5" />
             </div>
@@ -57,8 +57,8 @@ export function Slide15() {
                 </div>
               </div>
               <div className="text-left flex-1">
-                <div className="font-mono text-xs text-[#8e8e8e] uppercase">Social Media</div>
-                <div className="font-bebas text-2xl text-white tracking-wide">MC POGRADECI</div>
+                <div className="font-mono text-s text-[#8e8e8e] uppercase">Social Media</div>
+                <div className="font-bebas text-3xl text-white tracking-wide">MC POGRADECI</div>
               </div>
               <ArrowRight className="text-[#8e8e8e] group-hover:text-[#cc5500] group-hover:translate-x-2 transition-all w-5 h-5" />
             </div>
@@ -70,8 +70,8 @@ export function Slide15() {
                 <Phone className="text-[#cc5500] w-5 h-5" />
               </div>
               <div className="text-left flex-1">
-                <div className="font-mono text-xs text-[#8e8e8e] uppercase">Core Team Direct Line</div>
-                <div className="font-bebas text-2xl text-white tracking-wide">+355 69 44 09 129</div>
+                <div className="font-mono text-s text-[#8e8e8e] uppercase">Core Team Direct Line</div>
+                <div className="font-bebas text-3xl text-white tracking-wide">+355 69 44 09 129</div>
               </div>
               <ArrowRight className="text-[#8e8e8e] group-hover:text-[#cc5500] group-hover:translate-x-2 transition-all w-5 h-5" />
             </div>
@@ -83,8 +83,8 @@ export function Slide15() {
                 <MapPin className="text-[#cc5500] w-5 h-5" />
               </div>
               <div className="text-left flex-1">
-                <div className="font-mono text-xs text-[#8e8e8e] uppercase">Adresa</div>
-                <div className="font-bebas text-2xl text-white tracking-wide">Bulevardi "Dëshmorët e Pojskës" Pogradec</div>
+                <div className="font-mono text-s text-[#8e8e8e] uppercase">Adresa</div>
+                <div className="font-bebas text-3xl text-white tracking-wide">Bulevardi "Dëshmorët e Pojskës" Pogradec</div>
               </div>
             </div>
           </div>

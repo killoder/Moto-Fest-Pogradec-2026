@@ -14,29 +14,29 @@ export function Slide14() {
       />
       <div className="absolute inset-0 bg-gradient-to-r from-[#121212] via-[#121212]/80 to-transparent" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-12 w-full flex flex-col md:flex-row items-center gap-16">
+      <div className="relative z-10 max-w-[1700px] mx-auto px-6 lg:px-16 w-full flex flex-col lg:flex-row items-center gap-8 lg:gap-20 h-full overflow-y-auto lg:overflow-visible py-12 lg:py-0">
         <div className="flex-1">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="font-ruslan text-[#cc5500] text-2xl tracking-[0.3em] mb-4">THE VISION</h2>
-            <h1 className="font-bebas text-8xl text-white tracking-tight leading-none mb-6">
+            <h2 className="font-ruslan text-[#cc5500] text-xl md:text-2xl tracking-[0.3em] mb-2 md:mb-4">THE VISION</h2>
+            <h1 className="font-bebas text-6xl md:text-8xl text-white tracking-tight leading-none mb-4 md:mb-6">
               BEYOND 2026
             </h1>
-            <p className="font-mono text-[#8e8e8e] text-xl mb-10 leading-relaxed max-w-xl">
+            <p className="font-mono text-[#8e8e8e] text-base md:text-xl mb-6 md:mb-10 leading-relaxed max-w-xl">
               Establishing Pogradec as the definitive Balkan Biker Capital. We are building an empire that will draw riders from across Europe by 2030.
             </p>
 
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-4 md:gap-6">
               <div className="flex items-center gap-6">
                 <div className="w-16 h-16 rounded bg-black border border-[#8e8e8e]/30 flex items-center justify-center shrink-0">
                   <TrendingUp className="text-[#cc5500] w-8 h-8" />
                 </div>
                 <div>
-                  <div className="font-bebas text-3xl text-white tracking-wider">10,000+ ATTENDEES</div>
-                  <div className="font-mono text-sm text-[#8e8e8e]">Projected for Year 5 (2030)</div>
+                  <div className="font-bebas text-2xl md:text-3xl text-white tracking-wider">10,000+ ATTENDEES</div>
+                  <div className="font-mono text-s text-[#8e8e8e]">Projected for Year 5 (2030)</div>
                 </div>
               </div>
               <div className="flex items-center gap-6">
@@ -44,8 +44,8 @@ export function Slide14() {
                   <Globe className="text-[#cc5500] w-8 h-8" />
                 </div>
                 <div>
-                  <div className="font-bebas text-3xl text-white tracking-wider">PAN-EUROPEAN REACH</div>
-                  <div className="font-mono text-sm text-[#8e8e8e]">Expanding marketing to Italy, Greece, and DACH</div>
+                  <div className="font-bebas text-2xl md:text-3xl text-white tracking-wider">PAN-EUROPEAN REACH</div>
+                  <div className="font-mono text-s text-[#8e8e8e]">Expanding marketing to Italy, Greece, and DACH</div>
                 </div>
               </div>
             </div>
@@ -60,9 +60,9 @@ export function Slide14() {
         >
           <div className="glass-panel p-8 w-full border-[#cc5500]/20">
             <h3 className="font-mono text-[#8e8e8e] text-sm mb-6 uppercase tracking-widest flex items-center gap-2">
-              <Target size={16} className="text-[#cc5500]"/> Growth Trajectory
+              <Target size={20} className="text-[#cc5500]"/> Growth Trajectory
             </h3>
-            <div className="relative h-64 w-full border-l-2 border-b-2 border-[#8e8e8e]/30 flex items-end justify-between px-4 pb-2">
+            <div className="relative h-48 md:h-64 w-full border-l-2 border-b-2 border-[#8e8e8e]/30 flex items-end justify-between px-2 md:px-4 pb-2">
               {/* Fake Chart Bars */}
               {[
                 { year: '2026', height: '40%', val: '6k' },

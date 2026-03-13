@@ -49,7 +49,7 @@ export function Slide10() {
       </motion.div>
       <div className="absolute inset-0 bg-gradient-to-t from-[#121212] via-[#121212]/80 to-[#121212]/90" />
 
-      <div className="relative z-10 max-w-[1500px] mx-auto px-12 w-full grid grid-cols-1 gap-16 items-center">
+      <div className="relative z-10 max-w-[1700px] mx-auto px-16 w-full grid grid-cols-1 gap-16 items-center">
         <div className="flex flex-col w-full">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -64,7 +64,7 @@ export function Slide10() {
             </p>
           </motion.div>
 
-          <div className="flex gap-6 w-full">
+          <div className="flex gap-12 w-full">
             {strategies.map((strat, i) => (
               <motion.div
                 key={strat.title}
@@ -85,7 +85,7 @@ export function Slide10() {
                     {strat.items.map((item, idx) => (
                       <div key={idx} className="flex items-start gap-3">
                         <div className="w-1.5 h-1.5 rounded-full bg-[#cc5500] mt-2 shrink-0 shadow-[0_0_5px_rgba(204,85,0,0.5)]" />
-                        <p className="font-mono text-[#8e8e8e] group-hover:text-white text-sm leading-relaxed transition-colors whitespace-pre-line">
+                        <p className="font-mono text-[#8e8e8e] group-hover:text-white text-s leading-relaxed transition-colors whitespace-pre-line">
                           {item}
                         </p>
                       </div>
