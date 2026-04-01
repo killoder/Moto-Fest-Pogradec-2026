@@ -12,11 +12,18 @@
   --font-mono: "Roboto Mono", monospace;
 }
 
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
 body {
   background-color: var(--color-matte-black);
   color: var(--color-brushed-steel);
   font-family: var(--font-mono);
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* Add an intense film grain/noise */
